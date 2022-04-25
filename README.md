@@ -1,7 +1,8 @@
-# Vue 3 + Vite
+# 懶人專用
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<a target='_blank' href='https://adha9990.github.io/fat_cat/'>懶人專用</a>
 
-## Recommended IDE Setup
+<a target='_blank' href='https://adha9990.github.io/fat_cat/'>
+    <img width='600' src='https://github.com/adha9990/fat_cat/blob/master/public/unknown.png'/>
+</a>
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
