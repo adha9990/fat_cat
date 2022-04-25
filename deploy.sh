@@ -1,26 +1,28 @@
 #!/usr/bin/env sh
 
-# 发生错误时终止
+# 發生錯誤時執行終止指令
 set -e
 
-# 构建
+# 打包編譯
 npm run build
 
-# 进入构建文件夹
+# 移動到打包資料夾下，若你有調整的話打包後的資料夾請務必調整
 cd dist
 
-# 如果你要部署到自定义域名
+# 部署到自定義網域
 # echo 'www.example.com' > CNAME
 
 git init
-git checkout -b main
 git add -A
 git commit -m 'deploy'
 
-# 如果你要部署在 https://<USERNAME>.github.io
-git push -f git@github.com:adha9990/adha9990.github.io.git main
+# 部署到 https://<USERNAME>.github.io
+# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
-# 如果你要部署在 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
+# 部署到 https://<USERNAME>.github.io/<REPO>
+git push -f git@github.com:adha9990/fat_cat.git master:gh-pages
+
+# 除此之外，也可以改走 HTTPS 模式
+# git push -f https://github.com/hsiangfeng/HexfootMusic.git master:gh-pages
 
 cd -
